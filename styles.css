@@ -4,7 +4,6 @@ body {
     background-color: black;
     font-family: 'FK Grotesk', sans-serif;
     padding-top: 5rem;
-    margin-bottom: 50rem;
 }
 
 #navbar {
@@ -313,6 +312,16 @@ button:active {
     
 }
 
+.footer{
+    display: flex;
+    margin-left: 0.9rem;
+    margin-right: 0.9rem;
+    border-radius: 2rem;
+    background-color: #F4F8FF;
+    height: 60rem;
+    margin-bottom: 1.3rem;
+
+}
 @media (max-width: 1024px) {
     .highlights {
         grid-template-columns: 1fr;
