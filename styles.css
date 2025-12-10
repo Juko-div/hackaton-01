@@ -84,7 +84,7 @@ body {
 .hero-section {
     display:flex;
     flex-direction: column;
-    height: auto;
+    height: 32rem;
     background-color: #F4F8FF;
     border-radius: 3rem;
     margin-left: 0.9rem;
@@ -93,19 +93,20 @@ body {
 }
 
 .h01 {
-    font-size:150px ;
-    font-weight: bold;
-    line-height: 1;
+    font-size:120px ;
+    font-weight:400;
     text-align: center;
-    font-family: 'InstrumentSerif', serif;
-    margin-bottom: 0;
+    /* font-family: 'Mageline'; */
+    margin-bottom: -0.5rem;
+    letter-spacing: -0.04em;
 
 }
 
 .h01-bottom {
-    color: grey;
+    color: rgb(59, 59, 59);
     text-align: center;
-    font-size: 24px;
+    font-size: 32px;
+    font-family: 'InstrumentSerif';
 }
 
 /* --- BOUTONS --- */
@@ -210,7 +211,7 @@ button:active {
 
 
 .first-01, .second-01, .first-02, .second-02 {
-    height: 40rem;
+    height: 39rem;
     border-radius: 2rem;
     overflow: hidden; 
     display: flex; 
@@ -230,14 +231,16 @@ button:active {
 
 
 .second-01 {
-    background-color: #3938B8;
-    align-items: center; 
+    background-color: #04361f;
+    align-items: center;
+    justify-content: center;
 }
 
 
 .first-02 {
-    background-color: #AA0A58;
+    background-color: #200668;
     align-items: center;
+    justify-content: center;
 }
 
 
@@ -266,9 +269,9 @@ button:active {
 .card-content p {
     font-size: 1.2rem;
     line-height: 1.5;
-    color:black;
-    margin-top: 11rem;
-    margin-bottom: 1.3rem;
+    color:rgb(78, 78, 78);
+    margin-top: 12rem;
+    margin-bottom: 2rem;
     max-width: 95%;
     justify-content: center;
 }
@@ -303,7 +306,7 @@ button:active {
     margin-top: 3rem;
     align-self: center;
     border-radius: 2rem;
-    color: yellow;
+    color: white;
     font-size: medium;
     font-weight: bold;
     background-color: #000;
@@ -327,7 +330,10 @@ button:active {
         grid-template-columns: 1fr;
     }
     .first-01, .second-01, .first-02, .second-02 {
+        justify-content: center;
+        align-items: center;
         height: auto;
+        align-content: center;
         min-height: 35rem;
     }
 }
@@ -340,4 +346,9 @@ button:active {
 @font-face {
     font-family: 'InstrumentSerif';
     src: url(./Fonts/InstrumentSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Mageline';
+    src: url(./Fonts/mageline.otf);
 }
