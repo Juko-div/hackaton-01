@@ -111,14 +111,15 @@ body {
     font-family: 'InstrumentSerif';
 }
 
-/* --- BOUTONS --- */
+
 .repeat {
+    display: flex;
     margin-top: 3rem;
     position: relative;
     height: 50px;
     padding: 0 30px;
     align-self:center;
-    width: 155px;
+    width: 100px;
     border: 2px solid #000;
     background: #e8e8e8;
     user-select: none;
@@ -126,6 +127,15 @@ body {
     transition: all .05s linear;
     font-family: inherit;
     cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.start-now-alink{
+    text-decoration: none;
 }
 
 .repeat:before, .repeat:after {
@@ -146,6 +156,14 @@ body {
     height: calc(100% + 6px);
     top: -3px;
     left: 8px;
+}
+
+a:hover {
+    cursor:pointer;
+}
+
+a:active {
+    transform: scale(0.95);
 }
 
 button:hover {
@@ -278,7 +296,7 @@ button:active {
     justify-content: center;
 }
 
-.card-content button {
+.card-content a {
     align-self: center;
     margin-top: 0;
 }
@@ -300,15 +318,18 @@ button:active {
 }
 
 .personal-button {
+    display: flex;
     width: 12rem;
     height: auto;
     justify-self: center;
     padding: 1rem;
     vertical-align: middle;
     margin-top: 3rem;
+    justify-content: center;
     align-self: center;
     border-radius: 2rem;
     color: white;
+    text-decoration: none;
     font-size: medium;
     font-weight: bold;
     background-color: #000;
