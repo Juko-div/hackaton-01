@@ -4,9 +4,10 @@ body {
     background-color: black;
     font-family: 'FK Grotesk', sans-serif;
     padding-top: 5rem;
+    padding-bottom: 2rem;
 }
 
-#navbar {
+.navbar {
     background-color: black;
     color: white;
     height: 4.69rem;
@@ -25,7 +26,7 @@ body {
     z-index: 1000;
 }
 
-#navbar.navbar-hidden {
+.navbar.navbar-hidden {
     transform: translateY(-100%);
     box-shadow: none;
 }
@@ -93,6 +94,7 @@ body {
 }
 
 .h01 {
+    transform: scaleY(1.25);
     font-size:120px ;
     font-weight:400;
     text-align: center;
@@ -192,8 +194,8 @@ button:active {
 }
 
 .Locked-in{
-    margin-top: 10rem;
-    margin-bottom: 10rem;
+    margin-top: 9rem;
+    margin-bottom: 9rem;
     color: white;
     font-size: 6.3rem;
     text-align: center;
@@ -325,6 +327,109 @@ button:active {
     margin-bottom: 1.3rem;
 
 }
+/* Features page style section */
+
+.features-hl {
+    padding: 0;
+    margin-top: 2rem;
+    font-size: 6.6rem;
+    justify-content: center;
+    align-self: center;
+    color: white;
+
+}
+
+.features-top{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 0;
+}
+
+.features-ptext {
+    margin-top: -7rem;
+    color: rgba(255, 255, 255, 0.753);
+    font-size: 1.68rem;
+    font-weight:lighter;
+}
+
+.features-main {
+    margin-top: 14rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 0.9rem;
+    border-radius: 2rem;
+    margin-right: 0.9rem;
+    gap: 0.9rem;
+    padding: 0;
+}
+
+.features-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+    height: 30rem ;
+    border: solid grey 2px;
+    background-color: #F5F8FF;
+    padding: 2rem;
+
+}
+
+.features-card .line-1 {
+    color: #272822;
+    margin-bottom: 2.5rem;
+
+}
+
+.features-card .line-2{
+    margin-bottom: 2rem;
+}
+
+.line-2 img {
+    border-radius: 50%;
+    height: 8rem;
+}
+
+.line-3 a {
+    font-family: 'Inter';
+    font-size: 2rem;
+    font-weight: 800;
+    color: #272822;
+    text-decoration: none;
+}
+
+.line-4 {
+    color: #272822;
+    margin-top: 6rem;
+    /* font-si
+    ze: larger; */
+}
+
+.games-hl{
+    padding: 0;
+    margin-top: 2rem;
+    font-size: 6.6rem;
+    justify-content: center;
+    align-self: center;
+    color: white;
+    /* transform: scaleX(1.2); */
+    /* font-family: 'InstrumentSerif'; */
+}
+
+.games-top {
+        padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 0;
+}
+
+
 @media (max-width: 1024px) {
     .highlights {
         grid-template-columns: 1fr;
