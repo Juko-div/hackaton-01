@@ -1,0 +1,145 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Segoe UI', Arial, sans-serif;
+	background: #b71c1c;
+	min-height: 100vh;
+}
+
+/* Home button (top-left) */
+.home-btn {
+	position: fixed;
+	top: 16px;
+	left: 16px;
+	width: 48px;
+	height: 48px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(255,255,255,0.95);
+	color: #b71c1c;
+	border-radius: 10px;
+	box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+	text-decoration: none;
+	z-index: 1000;
+	transition: transform 0.12s ease, background 0.12s ease;
+}
+.home-btn svg {
+	width: 22px;
+	height: 22px;
+	fill: currentColor;
+}
+.home-btn:hover {
+	transform: translateY(-2px);
+	background: #fff;
+}
+.home-btn:focus-visible {
+	outline: 3px solid rgba(183,28,28,0.18);
+	outline-offset: 3px;
+}
+
+.container {
+	display: flex;
+	height: 100vh;
+}
+
+.left {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #b71c1c;
+}
+
+.sapin-img {
+	max-width: 80%;
+	max-height: 80vh;
+	border-radius: 20px;
+	box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+}
+
+.right {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+    font-family: 'FK Grotesk';
+
+	background: #fff;
+	/* border-top-left-radius: 40px;
+	border-bottom-left-radius: 40px; */
+	box-shadow: -4px 0 24px rgba(0,0,0,0.08);
+}
+
+
+
+.right h2 {
+    font-size: 2rem;
+	color: #b71c1c;
+	margin-bottom: 2rem;
+}
+
+#name-form {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	width: 80%;
+	max-width: 320px;
+}
+
+#username {
+	padding: 12px;
+	border: 1px solid #b71c1c;
+	border-radius: 8px;
+	font-size: 1.1em;
+}
+
+button[type="submit"] {
+	padding: 12px;
+	background: #b71c1c;
+	color: #fff;
+	border: none;
+	border-radius: 8px;
+	font-size: 1.1em;
+	cursor: pointer;
+	transition: background 0.2s;
+}
+button[type="submit"]:hover {
+	background: #a31515;
+}
+
+.wish-section {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: rgb(218, 216, 216);
+	font-family: 'InstrumentSerif';
+	/* border-radius: 40px; */
+}
+.wish-section h1 {
+	color: #b71c1c;
+	font-size: 3em;
+	margin-bottom: 16px;
+}
+.wish-section .username {
+	font-weight: bold;
+	color: #388e3c;
+}
+.wish-section p {
+	font-size: 1.8em;
+	color: #444;
+}
+
+@font-face {
+    font-family: 'InstrumentSerif';
+    src: url(./Fonts/InstrumentSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'FK Grotesk';
+    src: url(./Fonts/FKGrotesk-Bold.woff2);
+}

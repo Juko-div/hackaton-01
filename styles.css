@@ -4,7 +4,7 @@ body {
     background-color: black;
     font-family: 'FK Grotesk', sans-serif;
     padding-top: 5rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 2rem;
 }
 
 .navbar {
@@ -372,6 +372,7 @@ button:active {
     gap: 1rem;
     height: 55rem;
     margin: 0.9rem;
+    margin-bottom: 0;
 }
 
 .footer-hl{
@@ -431,7 +432,7 @@ button:active {
 }
 
 .footer-links li + li {
-    border-top: 1px solid rgba(255,255,255,0.42); /* separator between items */
+    border-top: 1px solid rgba(255, 255, 255, 0.26); /* separator between items */
     margin-top: 0.5rem; /* small gap above the item so the line isn't flush */
     padding-top: 0.5rem; /* space between line and text */
 }
